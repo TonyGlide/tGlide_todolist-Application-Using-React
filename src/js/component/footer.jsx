@@ -1,14 +1,12 @@
 import React from "react";
-import App from "./app";
 import "../../styles/style.css"
 
-const Home = () => {
+const Footer = () => {
 	return (
 		<>
-		<App />
+		Footer
 		</>
-		
 	);
 };
 
-export default Home;
+export default Footer;
