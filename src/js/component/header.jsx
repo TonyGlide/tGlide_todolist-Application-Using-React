@@ -4,8 +4,7 @@ import "../../styles/header.css"
 
 const Header = () => {
 	return (
-	<>
-	<header className="header">
+		<header className="header">
 <h1>todos</h1>
 <input
  className="task-input"
@@ -15,7 +14,7 @@ const Header = () => {
 
  <button> Add Task</button>
 	</header>
-	</>
+	
 	);
 };
 

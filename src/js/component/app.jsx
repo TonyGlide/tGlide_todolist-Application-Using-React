@@ -6,6 +6,13 @@ import Footer from "../component/footer";
 
 
 
+const TASKS=[
+//{id: 0, task:"wash car"},
+//{id: 1, task:"Do homework"},
+//{id: 2, task:"Mow the lawn"},
+]
+
+
 const App = () => {
 	return (
 		<div className="todo-wrapper">
@@ -14,11 +21,11 @@ const App = () => {
 		<div />
 
 		<div>
-		<Body />
+		<Body todos={TASKS}/>
 		</div>
 
 		<div>
-		<Footer />
+		<Footer todos={TASKS}/>
 		</div>
 		
 		</div>
