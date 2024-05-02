@@ -1,11 +1,14 @@
 import React from "react";
-import "../../styles/style.css"
+//display how many task are listed, from 0 to infinity
 
 const Footer = () => {
 	return (
-		<>
-		Footer
-		</>
+		
+		<footer className="footer">
+<p>3 task left.</p>
+
+		</footer>
+		
 	);
 };
 
