@@ -5,14 +5,8 @@ import Body from "../component/body";
 import Footer from "../component/footer";
 
 
-
-
-
-
 const App = () => {
 const [todos, setTodos] = useState([]);
-
-
 	return (
 		<div className="todo-wrapper">
 		<div>
