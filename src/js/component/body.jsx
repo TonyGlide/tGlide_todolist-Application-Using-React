@@ -1,28 +1,33 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../../styles/App.css"
 
-//display the task
-//each task will need a deleted button
-//the deleted button will appear onyl on hover
 
-//a conditional
-// if there are task, list them
-// otherwise, display "No task, Add a task."
 
 const Body = ({todos, setTodos}) => {
 
-    const deleteTask = (selecterTodoId) => {
+useEffect(() => {
+
+fetch('https://playground.4geeks.com/todo/users/tGlide')
+.then(res => res.json())
+.then(data => setTodos(data.todos))
+.catch(error => console.log("Error: ", error))
+
+}, [])
+
+
+const deleteTask = (selecterTodoId) => {
 let updatedTodos = todos.filter(todo => todo.id !== selecterTodoId);
 setTodos(updatedTodos);
 
-    }
+
+
+}
    
-    
-    
+       
 let renderTasks = todos.map(todo => {
 return (
 <li key={todo.id} className="task-item">
-<span className="task" >{todo.title}</span>
+<span className="task" >{todo.label}</span>
 <span>
 <svg 
 onClick={() => deleteTask(todo.id)}
