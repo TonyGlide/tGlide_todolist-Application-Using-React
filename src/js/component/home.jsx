@@ -4,9 +4,10 @@ import App from "./app";
 
 const Home = () => {
 	return (
-		<>
+		
+		
 		<App />
-		</>
+		
 		
 	);
 };

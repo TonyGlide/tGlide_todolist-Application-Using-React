@@ -1,15 +1,48 @@
-.todo-wrapper{
-    margin: 50px auto;
-    width: 400px;
+ul{
+    padding-left: 0rem;
+    margin-bottom: 0rem;
+}
+li{
+    border: 0.1px solid #ced4da;;
+    list-style-type: none;
+    padding-left: 2rem;
+    
 }
 
-ul {
-list-style: none;
-margin-left: -20px;
+li span {
+    display: none;
+}
+li:hover span {
+    display: inline;
+    float: inline-end;
+    padding-inline-end: 5%;
 }
 
-.task{
-display: inline-block;
-width: 230px;
+.footerCount p{
+    border: 0.1px solid #ced4da;;
+    padding-left: 1rem;
+    font-size: 0.8rem;
 }
 
+div{
+    width: 30rem;
+    margin: auto;
+}
+
+.form-control{
+    padding: .350rem 2rem 
+}
+
+.input{
+    width: 30rem;
+    margin: auto;
+    background: #fff;
+    box-shadow:
+      0 1px 1px rgba(0,0,0,0.15),
+        0 10px 0 -5px #eee,
+       0 10px 1px -4px rgba(0,0,0,0.15),
+        0 20px 0 -10px #eee,
+       0 20px 1px -9px rgba(0,0,0,0.15);
+
+    padding: 0px;
+}
